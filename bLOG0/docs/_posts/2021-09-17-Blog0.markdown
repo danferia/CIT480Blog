@@ -13,3 +13,5 @@ categories: blog
 >Platform as a service provides a platform for software creation. this gices developers the flexibility to build software without having to worry about an operating syste, software updates, storage, or infastructure. A buisness can create and design applications with special components which makes it cost-effectivve and reduced the amount of coding needed.
 ### Infrastructure
 > Infrastructure as a service includes servers, networking, operating systems, and storage with virtualization technology. The cloud servers would provide the organization complete control of the infrastructure with application programming interface. With the same technology and capabilites of a traditional data center without maintaining a physical data center. Clients are responsible for managing the application, opperating systems, middleware and data. 
+ 
+ 
