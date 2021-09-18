@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Welcome to Cloud Computing!"
+date:   2021-09-16 22:33:15 -0700
+categories: blog
+---
+# Cloud Computing
+> Through the past decade cloud computing has revolutionlized industries all over. It has allowed buisnesses, schools, and government agenciesto function at any point and time on a global scale. Cloud computing also provides a better cost-to-value performance. there have been new developments wither serverless comptuing, networking, Internet of Things, and processing network edge. Up till now there are three main service models Software, Platform, and Infrastructure as a service.
+## Service Models
+### Service
+>Software as a service is known as a third party manged cloud application most commonly utilized for buisnesses. Majority of there cloud applications can be run by a web browser which doesnt require any downloads or instalations this eliminated the need for IT staff to install applications of each computer. It can also be managed by the vendors which streamlines technical issues and support the buisness
+### Platform
+>Platform as a service provides a platform for software creation. this gices developers the flexibility to build software without having to worry about an operating syste, software updates, storage, or infastructure. A buisness can create and design applications with special components which makes it cost-effectivve and reduced the amount of coding needed.
+### Infrastructure
+> Infrastructure as a service includes servers, networking, operating systems, and storage with virtualization technology. The cloud servers would provide the organization complete control of the infrastructure with application programming interface. With the same technology and capabilites of a traditional data center without maintaining a physical data center. Clients are responsible for managing the application, opperating systems, middleware and data. 
