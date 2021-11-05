@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "SolarWinds!"
+date:   2021-10-14 22:33:15 -0700
+categories: blog
+---
+# Recent Cloud computing Cyber attacks
+> Last year a group of Russian hackers hid malicious code within SolarWinds software update to launch an attack against the US government and other big companies. Microsoft one of the victims reported that the group was targeting technology companies that are cloud service providers to impersonate a trusted organization and gain access to the customers. The hackers can gather vulnerabilities in the software and use phishing, and password spray to gain access the target networks. 
+### Phishing Attacks
+> Phishing Attacks are a major threat to organizations and individuals many of phishing attacks have led to billions of dollars lost annually. These data breaches are dangerous the main use for gathering the victim’s information. An example is the user id sent spam which holds an encrypted malware link, once the link is opened the malware is downloaded. In 2014 there was a reported 66% of increase in attacks resulting in thousands of cases in identity theft. There are three characteristics to a phishing attack first the attacks occur through channels that undermines the be phishing’s goal and process the phishing message. The second type of deception where the deceiver may repeat interactions with the receiver in an onetime message sent to group of individuals. Lastly the third type is the goal is to persuade the victim to perform specific actions. 
+> Influence phishing technique have an impact to motivating the victim to giving or performing the actions needed. There are six influence techniques: liking, reciprocity, social proof, consistency, authority, and scarcity. These techniques have been used as tools for marketing, and security research and this is used to explain human behavior. Liking is the factor of physical attractiveness, similarities which can increase the chance of compliance. Reciprocity uses the tendency to repay in kind such as a fake message coaxing the victim to provide information. Social proof is the behavior of others and to follow. Consistency is the commitment a person feels and is pressured into performing an action such as updating their password. Authority using words that make the victim to oblige to the commands. Scarcity is to drive the victim with their personal valuables such as deactivating accounts after a certain time.  
+
+#### Reference
+* Wright, Ryan T., et al. “Influence Techniques in Phishing Attacks: An Examination of Vulnerability and Resistance.” Information Systems Research, vol. 25, no. 2, Institute for Operations Research and the Management Sciences, 2014, p. 385–.
+* Hernandez, J. (2021, October 25). The Russian hacker group behind the solarwinds attack is at it again, Microsoft says. NPR. Retrieved November 5, 2021, from https://www.npr.org/2021/10/25/1048982477/russian-hacker-solarwinds-attack-microsoft. 
