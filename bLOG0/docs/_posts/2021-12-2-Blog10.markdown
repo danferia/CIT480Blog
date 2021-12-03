@@ -1,0 +1,135 @@
+---
+layout: post
+title:  "Installing OpenCV and Python!"
+date:   2021-10-14 22:33:15 -0700
+categories: blog
+---
+# OpenCV 
+
+ OpenCV is a library of programing functions aiming for real time computer vision. The program was originally developed by Intel a cross-platform free to use as an open-source Apache-2 license. The applications have a wide area of models which use human comuter interaction, facial recognition, motion tracking etc. There are a variety of support that is included in OpenCV machine learning library such as decision tree learning, deep neural networks, boosting, etc. OpenCV is primary interface is written in C++ and still retains older C++ interface it is also binding with python, java and MATLAB/OCTAVE. The library can also find Intels integrated performance primitives on the system and optimize routines to accelerate itself CUDA and OpenCL basaed GPU interfaces are some of hardware which are being used. 
+
+## Installing Prerequisites 
+
+ Updating existing packages using Ubuntu operating system
+
+ >> $ sudo apt-get update
+ >> $ sudo apt-get upgrade
+
+ ## Developer tools to Compile OpenCV
+
+ >> $ sudo apt-get install build-essential cmake git pkg-config
+
+ ## Image Format libraries and Packages installation
+
+ >> $ sudo apt-get install libjpeg8-dev libtiff4-dev libjasper-dev libpng12-dev
+
+ ## Video format libraries installation
+
+ >> $ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+
+ ## GTK GUI features 
+
+ >> $ sudo apt-get install libgtk2.0-dev
+
+ ## Installing packages used to Optimize Various functions inside OpneCV
+
+ >> $ sudo apt-get install libatlas-base-dev gfortran
+
+## Step 2: Python/Virtual Enviroment setup
+
+ ### Installing Python 3 package manager pip 
+
+ >> $ wget https://bootstrap.pypa.io/get-pip.py
+ >> $ sudo python3 get-pip.py
+
+ There is a distinction when installing pip without python3 it will install Python2.7 having the most updated python will be preferable to maintain consistency.
+
+ ### The next will be installing and setting up Virtualenv and virtual wrapper. 
+
+ >> $ sudo pip3 install virtualenv virtualenvwrapper
+
+ ### Next is to update ~/.bashrc 
+
+ >> export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+ >> export WORKON_HOME=$HOME/.virtualenvs
+ >> source /usr/local/bin/virtualenvwrapper.sh
+
+ This command will ensure that the changes will affect the new terminal
+
+ >> $ source ~/.bashrc
+
+ ### Next will be to create the cv virtual environment using OpenCV and Python
+
+ >> $ mkvirtualenv cv
+
+ ## Setting up Python compiling and binding 
+
+ The next command will need the update version of Python dev.
+
+ Use  python –version to find the latest version
+
+ >> sudo apt-get install python3.4-dev
+
+ ## Install Numpy 
+
+ >> $ pip install numpy
+
+## Step 3: Build and install OpenCV with Python Binding
+
+ There is a OpenCV github which will help in loading all the packages. You will also need to check for the latest version.
+  <https://opencv.org/category/news/>
+
+ >> $ cd ~
+ >> $ git clone https://github.com/Itseez/opencv.git
+ >> $ cd opencv
+ >> $ git checkout 3.0.0
+ Do the same with the following and insert the latest version.
+
+ ### OpenCV_Contrib
+
+ >> $ cd ~
+ >> $ git clone https://github.com/Itseez/opencv_contrib.git
+ >> $ cd opencv_contrib
+ >> $ git checkout 3.0.0
+
+ Next is to setup the build. With C examples turned OFF with the latest version of OpenCV
+
+ >> $ cd ~/opencv
+ >> $ mkdir build
+ >> $ cd build
+ >> $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
+ >> -D CMAKE_INSTALL_PREFIX=/usr/local \
+ >> -D INSTALL_C_EXAMPLES=OFF\
+ >> -D INSTALL_PYTHON_EXAMPLES=ON \
+ >> -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules \
+ >> -D BUILD_EXAMPLES=ON ..
+
+ Compile the OpenCV process
+
+ >> $ make -j4
+
+ Next install the system 
+
+ >> $ sudo make install
+ >> $ sudo ldconfig
+## Step 4: Sym-link OpenCV
+
+ All packages will be installed in /usr/local/lib/python3.4/site-packages/
+ Python version change to the latest version. As well change the environmental name to cv.so
+
+ >> $ cd ~/.virtualenvs/cv/lib/python3.4/site-packages/
+ >> $ ln -s /usr/local/lib/python3.4/site-packages/cv2.cpython-34m.so cv2.so
+
+## Step 5: Test out the OpenCV  and Python + install
+
+ Let’s confirm the installation.
+ >> $ workon cv
+ >> $ python
+ >>> import cv2
+ >>> cv2.__version__
+ >> '3.0.0'
+ If worked Hooray! If it hasn’t worked make sure all of the packages were Installed correctly.
+
+Refrences:
+ 1. Rosebrock, A. (2021, April 17). Install OpenCV 3.0 and Python 3 on Ubuntu. PyImageSearch. <https://www.pyimagesearch.com/2015/07/20/install-opencv-3-0-and-python-3-4-on-ubuntu/>
+ 2.OpenCV. (2021). News Archives. <https://opencv.org/category/news/>
