@@ -13,32 +13,32 @@ categories: blog
  Updating existing packages using Ubuntu operating system
 
  >> $ sudo apt-get update
- 
+
  >> $ sudo apt-get upgrade
 
- ## Developer tools to Compile OpenCV
+ Developer tools to Compile OpenCV
 
  >> $ sudo apt-get install build-essential cmake git pkg-config
 
- ## Image Format libraries and Packages installation
+ Image Format libraries and Packages installation
 
  >> $ sudo apt-get install libjpeg8-dev libtiff4-dev libjasper-dev libpng12-dev
 
- ## Video format libraries installation
+ Video format libraries installation
 
  >> $ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
 
- ## GTK GUI features 
+ GTK GUI features 
 
  >> $ sudo apt-get install libgtk2.0-dev
 
- ## Installing packages used to Optimize Various functions inside OpneCV
+ Installing packages used to Optimize Various functions inside OpneCV
 
  >> $ sudo apt-get install libatlas-base-dev gfortran
 
 ## Step 2: Python/Virtual Enviroment setup
 
- ### Installing Python 3 package manager pip 
+ Installing Python 3 package manager pip 
 
  >> $ wget https://bootstrap.pypa.io/get-pip.py
 
@@ -46,11 +46,11 @@ categories: blog
 
  There is a distinction when installing pip without python3 it will install Python2.7 having the most updated python will be preferable to maintain consistency.
 
- ### The next will be installing and setting up Virtualenv and virtual wrapper. 
+ The next will be installing and setting up Virtualenv and virtual wrapper. 
 
  >> $ sudo pip3 install virtualenv virtualenvwrapper
 
- ### Next is to update ~/.bashrc 
+ Next is to update ~/.bashrc 
 
  >> export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 
@@ -63,11 +63,11 @@ categories: blog
 
  >> $ source ~/.bashrc
 
- ### Next will be to create the cv virtual environment using OpenCV and Python
+ Next will be to create the cv virtual environment using OpenCV and Python
 
  >> $ mkvirtualenv cv
 
- ## Setting up Python compiling and binding 
+ Setting up Python compiling and binding 
 
  The next command will need the update version of Python dev.
 
@@ -75,7 +75,7 @@ categories: blog
 
  >> sudo apt-get install python3.4-dev
 
- ## Install Numpy 
+ Install Numpy 
 
  >> $ pip install numpy
 
@@ -94,7 +94,7 @@ categories: blog
 
  Do the same with the following and insert the latest version.
 
- ### OpenCV_Contrib
+ OpenCV_Contrib
 
  >> $ cd ~
 
