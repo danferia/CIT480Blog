@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Attack Analysis!"
+date:   2021-10-14 22:33:15 -0700
+categories: blog
+---
+# Taxonomy
+> Before we defined the components which are target for the attack now, we’ll discuss the threat model and taxonomy. The cyber-attacks in the cloud can be divided into Application, Virtual and Physical layer. Attacks on the physical layer are directed to the physical servers, storage devices or networking. The target are management or application data. While attacks on the virtual layer are to virtual serves, networking components and other virtual devices. These attacks are seeking to steal, modify or make data inaccessible or access the application layer to gain control over user profiles, or properties. 
+### Threat model
+> For this experiment the threat model the attacks were based on confidentiality, integrity, and availability of application data the attack was constrained to management data. The attack source is comprised of nodes with different types of networking environment from which the cyber-attack will originate. The attack will enter the cloud network through the internet from a private network of a cloud service provider. The trusted third party manages the cloud security and other shared entities in the providers’ network. When a discrete node (n0i) in this unit is denoted and set three attack sources used to attack specific nodes in certain layers. In layer one and layer two are the access point for this attack the attacker can enter in three cloud layers and this can imply a multi-directional attack. There are two types of nodes pivot, and goal nodes. Pivot nodes are used by the attacker as steppingstones to reach the next node. A pivot node can be exploited before reaching the nest node and will become a critical node and failure to exploit will result to a node thwart. The multi-stage attacker will discover vulnerable nodes in the cloud network through attacks and lateral movements. Goal nodes are the nodes which the attacker is seeking and if there are no further attainment of pivot nodes then the last node is the goal. With multi-staged attack there are two categories Intra-layer and inter-layer. Intra-layer attacks the present attacks withing the layer and exploits multiple nodes to breach the target. Inter-layer attacks which leverage pivot node to reach another node in a different layer.    
+
+#### Reference
+* Zimba, Aaron, and Victoria Chama. “Cyber Attacks in Cloud Computing: Modelling Multi-Stage Attacks Using Probability Density Curves.” International Journal of Computer Network and Information Security, vol. 10, no. 3, Modern Education and Computer Science Press, 2018, pp. 25–36, doi:10.5815/ijcnis.2018.03.04.

@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Cloud Power!"
+date:   2021-10-14 22:33:15 -0700
+categories: blog
+---
+# Cloud Energy 
+> Cloud Computing has been efficient in our day-to-day lives though with the amount of usage one of the main concerns would be how much energy is this taking. In a survey done in 2014 large data centers are comprised of thousands of units and other equipment the consumption generates between 1.1% and 1.5% total of energy efficiency of infrastructures. New technological breakthroughs and massive provide cheap and easy to use products that are more accessible increasing the usage of emerging technologies. The amount of energy used from the 1990 has double from 10k TWh up to 20k TWh worldwide with a future estimate by 2040 an increase of 2.2% per year. To find the most effective way to conserve energy the European Commission has continued its advances in reducing emissions of greenhouse gasses and other pollutants. 
+
+> The goal of the European commission is to find a more sustainable way with the help of Information and Communications Technology it has recognized the major energy consumers and became its main issue of the Digital agenda for Europe. The US environmental Protection Agency estimated the same growth until 2010 when consumption of power increased 56% the expansion of data centers have expanded in 2008 and many facilities have renovated their spaces to accommodate for the new equipment. It is predicated that in 2020 the construction size for new data centers will be around 78 billion twice that in 2010. 
+
+> The World energy council is a global forum which is to promote the sustainability supply and use of energy for the benefit of people. These leaders help promote affordable, stable, and environmentally sensitive energy. Recently the G20 has proposed different strategies which will transform the energy systems in placed now. The proposal is to build a comprehensive international database which will account for the different data availabilities and monitor G20 countries. The data which they receive will be analyzed to implement policies and business models to the specific goals of each country. Since there are a variety of different countries most with citizens in 
+
+#### Reference
+* Mastelic, Toni, et al. “Cloud Computing: Survey on Energy Efficiency.” ACM Computing Surveys, vol. 47, no. 2, ACM, 2015, pp. 1–36, https://doi.org/10.1145/2656204.
+* Rivera, Wilson. Sustainable Cloud and Energy Services Principles and Practice . 1st ed. 2018., Springer International Publishing, 2018, https://doi.org/10.1007/978-3-319-62238-5.
