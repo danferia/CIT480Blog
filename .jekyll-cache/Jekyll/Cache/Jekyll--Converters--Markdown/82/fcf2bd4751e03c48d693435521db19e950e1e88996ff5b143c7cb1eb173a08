@@ -1,0 +1,314 @@
+I":<h1 id="opencv">OpenCV</h1>
+
+<p>OpenCV is a library of programing functions aiming for real time computer vision. The program was originally developed by Intel a cross-platform free to use as an open-source Apache-2 license. The applications have a wide area of models which use human comuter interaction, facial recognition, motion tracking etc. There are a variety of support that is included in OpenCV machine learning library such as decision tree learning, deep neural networks, boosting, etc. OpenCV is primary interface is written in C++ and still retains older C++ interface it is also binding with python, java and MATLAB/OCTAVE. The library can also find Intels integrated performance primitives on the system and optimize routines to accelerate itself CUDA and OpenCL basaed GPU interfaces are some of hardware which are being used.</p>
+
+<h2 id="installing-prerequisites">Installing Prerequisites</h2>
+
+<p>Updating existing packages using Ubuntu operating system</p>
+
+<blockquote>
+  <blockquote>
+    <p>$ sudo apt-get update</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>$ sudo apt-get upgrade</p>
+  </blockquote>
+</blockquote>
+
+<p>Developer tools to Compile OpenCV</p>
+
+<blockquote>
+  <blockquote>
+    <p>$ sudo apt-get install build-essential cmake git pkg-config</p>
+  </blockquote>
+</blockquote>
+
+<p>Image Format libraries and Packages installation</p>
+
+<blockquote>
+  <blockquote>
+    <p>$ sudo apt-get install libjpeg8-dev libtiff4-dev libjasper-dev libpng12-dev</p>
+  </blockquote>
+</blockquote>
+
+<p>Video format libraries installation</p>
+
+<blockquote>
+  <blockquote>
+    <p>$ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev</p>
+  </blockquote>
+</blockquote>
+
+<p>GTK GUI features</p>
+
+<blockquote>
+  <blockquote>
+    <p>$ sudo apt-get install libgtk2.0-dev</p>
+  </blockquote>
+</blockquote>
+
+<p>Installing packages used to Optimize Various functions inside OpneCV</p>
+
+<blockquote>
+  <blockquote>
+    <p>$ sudo apt-get install libatlas-base-dev gfortran</p>
+  </blockquote>
+</blockquote>
+
+<h2 id="step-2-pythonvirtual-enviroment-setup">Step 2: Python/Virtual Enviroment setup</h2>
+
+<p>Installing Python 3 package manager pip</p>
+
+<blockquote>
+  <blockquote>
+    <p>$ wget https://bootstrap.pypa.io/get-pip.py</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>$ sudo python3 get-pip.py</p>
+  </blockquote>
+</blockquote>
+
+<p>There is a distinction when installing pip without python3 it will install Python2.7 having the most updated python will be preferable to maintain consistency.</p>
+
+<p>The next will be installing and setting up Virtualenv and virtual wrapper.</p>
+
+<blockquote>
+  <blockquote>
+    <p>$ sudo pip3 install virtualenv virtualenvwrapper</p>
+  </blockquote>
+</blockquote>
+
+<p>Next is to update ~/.bashrc</p>
+
+<blockquote>
+  <blockquote>
+    <p>export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>export WORKON_HOME=$HOME/.virtualenvs</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>source /usr/local/bin/virtualenvwrapper.sh</p>
+  </blockquote>
+</blockquote>
+
+<p>This command will ensure that the changes will affect the new terminal</p>
+
+<blockquote>
+  <blockquote>
+    <p>$ source ~/.bashrc</p>
+  </blockquote>
+</blockquote>
+
+<p>Next will be to create the cv virtual environment using OpenCV and Python</p>
+
+<blockquote>
+  <blockquote>
+    <p>$ mkvirtualenv cv</p>
+  </blockquote>
+</blockquote>
+
+<p>Setting up Python compiling and binding</p>
+
+<p>The next command will need the update version of Python dev.</p>
+
+<p>Use  python –version to find the latest version</p>
+
+<blockquote>
+  <blockquote>
+    <p>sudo apt-get install python3.4-dev</p>
+  </blockquote>
+</blockquote>
+
+<p>Install Numpy</p>
+
+<blockquote>
+  <blockquote>
+    <p>$ pip install numpy</p>
+  </blockquote>
+</blockquote>
+
+<h2 id="step-3-build-and-install-opencv-with-python-binding">Step 3: Build and install OpenCV with Python Binding</h2>
+
+<p>There is a OpenCV github which will help in loading all the packages. You will also need to check for the latest version.
+  <a href="https://opencv.org/category/news/">https://opencv.org/category/news/</a></p>
+
+<blockquote>
+  <blockquote>
+    <p>$ cd ~</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>$ git clone https://github.com/Itseez/opencv.git</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>$ cd opencv</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>$ git checkout 3.0.0</p>
+  </blockquote>
+</blockquote>
+
+<p>Do the same with the following and insert the latest version.</p>
+
+<p>OpenCV_Contrib</p>
+
+<blockquote>
+  <blockquote>
+    <p>$ cd ~</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>$ git clone https://github.com/Itseez/opencv_contrib.git</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>$ cd opencv_contrib</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>$ git checkout 3.0.0</p>
+  </blockquote>
+</blockquote>
+
+<p>Next is to setup the build. With C examples turned OFF with the latest version of OpenCV</p>
+
+<blockquote>
+  <blockquote>
+    <p>$ cd ~/opencv</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>$ mkdir build</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>$ cd build</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>$ cmake -D CMAKE_BUILD_TYPE=RELEASE <br />
+-D CMAKE_INSTALL_PREFIX=/usr/local <br />
+-D INSTALL_C_EXAMPLES=OFF<br />
+-D INSTALL_PYTHON_EXAMPLES=ON <br />
+-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules <br />
+-D BUILD_EXAMPLES=ON ..</p>
+  </blockquote>
+</blockquote>
+
+<p>Compile the OpenCV process</p>
+
+<blockquote>
+  <blockquote>
+    <p>$ make -j4</p>
+  </blockquote>
+</blockquote>
+
+<p>Next install the system</p>
+
+<blockquote>
+  <blockquote>
+    <p>$ sudo make install</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>$ sudo ldconfig</p>
+  </blockquote>
+</blockquote>
+
+<h2 id="step-4-sym-link-opencv">Step 4: Sym-link OpenCV</h2>
+
+<p>All packages will be installed in /usr/local/lib/python3.4/site-packages/
+ Python version change to the latest version. As well change the environmental name to cv.so</p>
+
+<blockquote>
+  <blockquote>
+    <p>$ cd ~/.virtualenvs/cv/lib/python3.4/site-packages/</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>$ ln -s /usr/local/lib/python3.4/site-packages/cv2.cpython-34m.so cv2.so</p>
+  </blockquote>
+</blockquote>
+
+<h2 id="step-5-test-out-the-opencv--and-python--install">Step 5: Test out the OpenCV  and Python + install</h2>
+
+<p>Let’s confirm the installation.</p>
+<blockquote>
+  <blockquote>
+    <p>$ workon cv</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>$ python</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>import cv2</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>cv2.<strong>version</strong></p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>‘3.0.0’</p>
+  </blockquote>
+</blockquote>
+
+<p>If worked Hooray! If it hasn’t worked make sure all of the packages were Installed correctly.</p>
+
+<p>Refrences:</p>
+<ol>
+  <li>Rosebrock, A. (2021, April 17). Install OpenCV 3.0 and Python 3 on Ubuntu. PyImageSearch. <a href="https://www.pyimagesearch.com/2015/07/20/install-opencv-3-0-and-python-3-4-on-ubuntu/">https://www.pyimagesearch.com/2015/07/20/install-opencv-3-0-and-python-3-4-on-ubuntu/</a>
+ 2.OpenCV. (2021). News Archives. <a href="https://opencv.org/category/news/">https://opencv.org/category/news/</a></li>
+</ol>
+:ET
